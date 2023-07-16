@@ -1,0 +1,46 @@
+// .archive,
+// .singular {
+	
+// 	// 서브 컨텐츠 영역
+// 	.site-content {
+// 		position: relative;
+// 		min-height: 1px;
+// 		padding-bottom: 90px;
+// 		border-top: 1px solid #e1e1e1;
+// 		// padding-left:  ($sub-grid-gutter / 2);
+// 		// padding-right: ($sub-grid-gutter / 2);
+// 		// float: right;
+// 		// width: 79.166667%;
+// 	}
+
+// }
+
+// 서브 컨텐츠 영역
+.site-content {
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 25px;
+	@media (min-width: $screen-sm-min) {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+	min-height: 500px;
+	// padding-bottom: 90px;
+	// border-top: 1px solid #e1e1e1;
+	// padding-left:  ($sub-grid-gutter / 2);
+	// padding-right: ($sub-grid-gutter / 2);
+	// float: right;
+	// width: 79.166667%;
+
+	.home & { 
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+.page-content {
+	@include clearfix();
+	position: relative;
+	min-height: 300px;
+}
+

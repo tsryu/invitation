@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@font-face {
+    font-family:'NanumBarunGothic';
+    font-style:normal;
+    font-weight:100;
+    src:url('../fonts/NanumBarunGothicWebLight.eot');
+    src:local(※), 
+      url('../fonts/NanumBarunGothicWebLight.woff') format('woff'), 
+      url('../fonts/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+@font-face {
+    font-family:'NanumBarunGothic';
+    font-style:normal;
+    font-weight:400;
+    src:url('../fonts/NanumBarunGothic.eot');
+    src:local(※), 
+      url('../fonts/NanumBarunGothic.woff') format('woff'), 
+      url('../fonts/NanumBarunGothic.ttf') format('truetype');
+}
+@font-face {
+    font-family:'NanumBarunGothic';
+    font-style:normal;
+    font-weight:700;
+    src:url('../fonts/NanumBarunGothicBold.eot');
+    src:local(※), 
+      url('../fonts/NanumBarunGothicBold.woff') format('woff'), 
+      url('../fonts/NanumBarunGothicBold.ttf') format('truetype');
+}

@@ -1,0 +1,199 @@
+$blue: #333741;
+$ivory: #d0d0cf;
+$ivory-dark: #aaa7a4;
+$ivory-darker: #868381;
+.wedding{
+	background-color: $ivory;
+	.page-content{
+		display: block;
+		width: auto;
+		max-width: 750px;
+		margin: 0 auto;
+		.container{
+			padding: 0 25px;
+			overflow: hidden;
+		}
+		img{
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+		figure{
+			margin: 0;
+			display: block;
+		}
+		
+		.invitation{
+			.map-section{
+				position: relative;
+				.map-wrap{
+					position: relative;
+					z-index: 2;
+					height: 0;
+					padding-bottom: 63.07%;
+					.map{
+						position: absolute!important;
+						width: 100%!important;
+						height: 100%!important;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						background-color: $white;
+					}
+				}
+				.bg-half{
+					position: absolute;
+					z-index: 1;
+					background-color: $blue;
+					bottom: 50%;
+					top: -1px;
+					left: 0;
+					right: 0;
+				}
+			}
+			.map-links{
+				font-size: 0;
+				padding-top: 18px;
+				.container{
+					text-align: center;
+					hr{
+						display: block;
+						height: 1px;
+						width: 100%;
+						background-color: $ivory-dark;
+						border: 0;
+						margin: 37px 0 0;
+					}
+					a{
+						display: inline-block;
+						margin: 0 14px;
+						img{
+							max-width:49px;
+							height: auto;
+						}
+					}
+				}
+				
+			}
+		}
+		.contact{
+			padding-top: 41px;
+			padding-bottom: 45px;
+			.col-1-2{
+				position: relative;
+				float: left;
+				width: 50%;
+				text-align: center;
+				h3{
+					margin: 0 0 28px;
+					background-color: $white;
+					border-top: 1px solid #a5a5a5;
+					border-bottom: 1px solid #a5a5a5;
+					padding: 13px 0;
+					text-align: center;
+					font-size: 0;
+					img{
+						max-height: 12px;
+						width: auto;
+						display: inline-block;
+					}
+				}
+				&.c2{
+					h4:before{
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						height: 64px;
+						width: 1px;
+						background-color: $ivory-dark;
+					}
+				}
+				h4{
+					margin: 0 0 11px;
+					font-size: 0;
+					text-align: center;
+					img{
+						max-height: 13px;
+						width: auto;
+						display: inline-block;
+					}
+				}
+				.contact-links{
+					font-size: 0;
+					text-align: center;
+					padding-bottom: 4px;
+					a{
+						display: inline-block;
+						margin: 0 7px;
+						img{
+							max-width: 37px;
+							height: auto;
+						}
+					}
+					&+h4{
+						margin-top: 25px;
+					}
+				}
+			}
+			.r2{
+				padding-top: 18px;
+				.c1 h3{margin-left: -25px;padding-left: 25px;}
+				.c2{
+					h3{
+						margin-right: -25px;padding-right: 25px;
+					}
+					h4:before{
+						top: 8px;
+						height: 23px;
+					}
+					.contact-links{
+						&+h4:before{
+							top: 67px;
+							height: 148px;
+						}
+					}
+				}
+			}
+		}
+		.gallery{
+			background-color: $ivory-darker;
+			padding-top: 40px;
+			padding-bottom: 53px;
+			h2{
+				margin: 0 auto 20px;
+				text-align: center;
+				font-size: 0;
+				img{
+					max-width:74px;
+					height: auto;
+					display: inline-block;
+					margin: 0;
+				}
+			}
+			.list-gallery{
+				overflow: hidden;
+				margin: 0 -8px;
+				padding: 0;
+				.list-item{
+					&:before{
+						display: none;
+					}
+					width: 33.3333%;
+					float: left;
+					margin: 0;
+					padding: 8px;
+					a{
+						display: block;
+						img{
+							display: block;
+							margin: 0 auto;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.fancybox-button--share{display: none!important;}

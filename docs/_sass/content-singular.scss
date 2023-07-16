@@ -1,0 +1,347 @@
+
+.page-header,
+.entry-header {
+	.header-shade{
+		background-color:rgba(0,0,0,0.5);
+		padding-top: 150px;
+	}
+	position: relative;
+	.page-title,
+	.entry-title {
+		margin: 0;
+		color:#FFF;
+		@include font-size(28);
+		// color:#4e4e4e;
+		@media (min-width: $screen-sm-min) {
+			@include font-size(36);
+		}
+		@include font-weight($normal);
+		line-height: 1.7;
+		word-break: keep-all;
+	}
+	.entry-date {
+		// color:#636567;
+		@include font-size(14);
+		margin-top: 12px;
+		color: #FFF;
+		@media (min-width: $screen-sm-min) {
+			margin-top: 8px;
+			@include font-size(15);
+		}
+	}
+}
+
+.post-categories,
+.entry-categories {
+	margin:15px 0 0;
+	@media (min-width: $screen-sm-min) {
+		margin: 30px 0 0;
+	}
+
+	> li {
+		display: inline-block;
+		margin-right: 5px;
+		@media (min-width: $screen-sm-min) {
+			display: block;
+			margin-right: 0;
+			margin-top: 5px;
+			&:first-child { margin-top: 0; }
+		}
+
+	}
+
+	.item {
+		display: inline-block;
+		// border: 2px solid #7992c1;
+		background-color: #dfdfdf;
+		text-align: center;
+		@include font-size(13);
+		color: #4e4e4e;
+		padding: 10px 8px;
+	}
+}
+
+.guidestyle {
+	color: $text;
+	@include font-size(16);
+	line-height: 1.57142857;
+	word-break:keep-all;
+	h1 { 
+		@include font-size(28); margin: 24px 0 10px; line-height: 1.4;
+		@media (max-width: $screen-xs-max) {
+			@include font-size(24);
+			margin: 12px 0 5px;
+		}
+	}
+	h2 { 
+		@include font-size(24); margin: 24px 0 10px;
+		@media (max-width: $screen-xs-max) {
+			@include font-size(20);
+			margin: 12px 0 5px;
+		}
+	}
+	h3 { 
+		@include font-size(20); margin: 18px 0 10px;
+		@media (max-width: $screen-xs-max) {
+			@include font-size(16);
+			margin: 9px 0 5px;
+		}
+	}
+	h4 { 
+		@include font-size(16); margin: 18px 0  6px;
+		@media (max-width: $screen-xs-max) {
+			@include font-size(14);
+			margin: 9px 0 3px;
+		}
+	}
+
+	h1, h2, h3, h4 {
+		color: #4e4e4e;
+	}
+	
+	p { 
+		margin: 22px 0;
+		@media (max-width: $screen-xs-max) {
+			margin: 15px 0;
+			@include font-size(14);
+		}
+	}
+
+	img { 
+    display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	img.aligncenter { margin: 0 auto; }
+	.img-caption{
+		text-align: center;
+		@include font-size(13);
+		color:#999;
+	}
+	hr {
+		margin: 24px 0;
+		height: 0;
+		border: none;
+		border-bottom: 1px solid #cfcecd;
+	}
+
+	ul {
+		margin: 18px 0;
+		list-style: none;
+
+		> li {
+			position: relative;
+			margin-top: 4px;
+			padding-left: 10px;
+
+			&:first-child { margin-top: 0; }
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 13px;
+				left: 0;
+				width: 3px;
+				height: 3px;
+				background-color: $brand;
+				display: inline-block;
+			}
+		}
+	}
+
+	ol {
+		margin: 18px 0;
+    padding-left: 0;
+		list-style-position: inside;
+
+		> li {
+			position: relative;
+			margin-top: 4px;
+		}
+	}
+
+	.no-style {
+		margin: 0;
+		> li { padding-left: 0; }
+		> li:before { content: none; }
+	}
+
+	dl {
+		margin: 0;
+		list-style: none;
+
+		> dt {
+			position: relative;
+			margin-bottom: 2px;
+			padding-left: 10px;
+			line-height: 1.78571429;
+			@include font-weight($normal);
+
+			// &:before {
+			// 	content: "";
+			// 	position: absolute;
+			// 	top: 9px;
+			// 	left: 0;
+			// 	width: 4px;
+			// 	height: 4px;
+			// 	background: url(../images/bullet.png) 0 0 no-repeat;
+			// }
+		}
+
+		> dd {
+			margin-left: 0;
+			margin-bottom: 12px;
+			line-height: 1.78571429;
+		}
+	}
+
+	blockquote {
+		display: block;
+		margin: 30px 0;
+		padding: 28px 30px;
+		color: #666;
+		// background-color: #f6f7f9;
+		// padding: 15px 20px;
+    	background-color: #ecf2f7;
+   		// border: 1px solid #e1e1e1;
+
+		p { margin: 0; }
+	}
+
+	table {
+		margin: 22px 0;
+		width: 100%!important;
+		// table-layout: fixed;
+		// word-break: break-all;
+    // word-break: keep-all;
+
+		thead {
+			th, td {
+				color: #fff;
+				padding: 7px;
+				@include font-size(13);
+				@media (min-width: $screen-sm-min) {
+					padding: 14px;
+					@include font-size(15);
+				}
+				@include font-weight($normal);
+				background-color: #f7963f;
+				// word-break: keep-all;
+			}
+		}
+
+		tbody {
+			th { background-color: #f7f7f4; }
+			th, td {
+				color: $text;
+				@include font-size(13);
+				padding: 7px;
+				@media (min-width: $screen-sm-min) {
+					padding: 14px;
+					@include font-size(16);
+				}
+				border-bottom: 1px solid #dfdfdf;
+				// word-break: keep-all;
+			}
+		}
+	}
+
+	h1, h2, h3, h4, ul, ol, p, table, blockquote {
+		&:first-child { margin-top: 0; }
+	}
+
+	em { color: #f7963f;}
+}
+
+// 글, 페이지
+.page-content{
+	@extend .guidestyle;
+	.single & {
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -30px; 
+			bottom: 0;
+			width: 1px;
+			background-color: #eee;
+			display: inline-block;
+		}
+	}
+	.list-blog{
+		@include clearfix();
+		>li{
+			position: relative;
+			margin: 10px 0;
+			@media (min-width: $screen-sm-min) {
+				float: left;
+				width: 31.3333%;
+				margin: 0 1%;
+				@include box-shadow(5px 5px 0 rgba(0,0,0,0.3));
+			}
+			// height: 48%;
+			background-color: #FFF;
+			.item-image{
+				display: block;
+				padding-bottom: 57%;
+				border-bottom: 1px solid #ddd;
+			}
+			.item-text{
+				padding: 20px;
+				@media(max-width:$screen-xs-max){
+					padding: 10px;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					background-color: rgba(0,0,0,0.5);
+				}
+				.item-title{
+					@media(max-width:$screen-xs-max){
+						margin-bottom: 0;
+					}
+					a{
+						display: block;
+						@include single-overflow();
+						@media(max-width:$screen-xs-max){
+
+							@include font-size(14);
+							color:#FFF;
+						}
+					}
+					small{
+						color:#999;
+						@include font-size(13);
+						@media(max-width:$screen-xs-max){
+							color:#FFF;
+						}
+					}
+				}
+				.item-excerpt{
+					display: none;
+					@media(min-width:$screen-sm-min){
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+.entry-content{
+	background-color: #FFF;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	img{
+		border: 1px solid #ddd;
+	}
+}
+// .entry-content{
+// 	padding-top: 50px;
+// 	.container{
+// 		background-color: #FFF;
+// 		padding: 70px;
+// 	}
+// }

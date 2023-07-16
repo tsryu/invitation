@@ -1,0 +1,32 @@
+title: tsryu
+email: yuteta@gmail.com
+
+twitter_username: yuteta
+github_username:  tsryu
+# facebook_username: tsryu
+
+markdown: kramdown
+kramdown:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "tables"]
+
+# highlighter: pygments
+
+permalink: none
+
+safe: true
+lsi: true
+# category-list: [portfolio, blog]
+
+gems:
+  - jekyll-redirect-from
+  - jemoji
+collections:
+  portfolio:
+      output: true
+scss:
+  style: compressed
+  sass_dir: _sass
+paginate: 5
+description: '2월 10일 (토) 낮 12시 30분, 충정로 아벤티움.'
+
+# baseurl: '/invitation'

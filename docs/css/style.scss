@@ -1,0 +1,69 @@
+---
+---
+
+@charset "utf-8";
+// 기본
+// @import "bootstrap/bootstrap";
+@import "__normalize";
+@import "__fonts";
+@import "__variables";
+@import "__mixins";
+@import "__module";
+@import "_init"; 
+
+//라이브러리
+@import "fullpage";
+@import "fancybox";
+
+// 레이아웃
+@import "basic";
+// @import "basic-header";
+// @import "basic-footer";
+@import "page-front";
+// @import "_headings";
+// @import "content-common";
+// @import "content-archives";
+// @import "content-singular";
+
+
+// @import '_variables.scss';
+// @import url('font.css');
+// @import url('normalize.css');
+// @import url('bootstrap.min.css');
+// @import url('main.css');
+// @import url('jquery.fullPage.css');
+
+
+// $container : '980px';
+
+// .body-loading{}
+
+// .wrap{width: $container;}
+
+
+// .site-header{
+// 	position: fixed;
+// 	width: 100%;
+// 	top: 0;
+// 	left: 0;
+// 	border-top: 0;
+// 	.site-nav{
+// 		.trigger{
+// 			a{
+// 				margin-left: 10px;
+// 			}
+// 		}
+// 	}
+// }
+
+// .portfolio-list{
+// 	overflow: hidden;
+// 	li{
+// 		@media (max-width: $screen-sm-min){
+// 			width: 25%;
+// 		}
+// 	}
+// }
+
+
+

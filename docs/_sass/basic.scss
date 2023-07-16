@@ -1,0 +1,44 @@
+// 컨테이너
+// .container {
+// 	@include container-fixed($grid-gutter-width);
+// 	@include clearfix();
+// 	position: relative;
+
+// 	@media (min-width: $screen-sm-min) {
+// 		width: $container-sm;
+// 	}
+// 	@media (max-width: $screen-xs-max) {
+// 		padding-left: 20px;
+// 		padding-right: 20px;
+// 	}
+// }
+a:focus, a:hover {
+	text-decoration: none;
+}
+#fp-nav ul li a span{
+	background:#fff;
+}
+.wrap-loading{
+	width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    text-indent: -9999px;
+    z-index: 9999;
+    @include opacity(.8);
+    &:before{
+    	content: '';
+	    width: 32px;
+	    height: 32px;
+	    left: 50%;
+	    top: 50%;
+	    margin-left: -32px;
+	    margin-top: -32px;
+	    background: url('../images/loading.gif') center center no-repeat;
+	    position: absolute;
+	}
+}
